@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("substr_json", "for substr_json support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("substr_json", "enable substr_json support", "no");
+
+if (PHP_SUBSTR_JSON != "no") {
+	EXTENSION("substr_json", "substr_json.c");
+}
+
